@@ -5,7 +5,7 @@ namespace UnitTests
 {
     public class ArrayTest
     {
-        [[Fact]
+        [Fact]
         public void Reverse_Array()
         {
             int[] array = new int[] { 1, 2, 3, 4, 5 };
@@ -13,6 +13,6 @@ namespace UnitTests
             var reverseArray = ArrayDS.ReserveArray(array);
         
             reverseArray.Should().BeInDescendingOrder();
-        }]
+        }
     }
 }
