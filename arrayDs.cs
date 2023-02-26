@@ -17,10 +17,11 @@ namespace Dotnet.Array
             //Variável para controlar posições do array
             int position = 0;
 
-            for (int i = array.Lenght; i<= 0; i--)
+            for (int index = array.Lenght - 1 ; index >= 0; index--)
             {
                 //populando um novo array
-                reverseArray[position] = array[i];
+                reverseArray[position] = array[index];
+                position++;
             }
 
             return reverseArray;
